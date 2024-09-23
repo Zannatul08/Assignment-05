@@ -25,6 +25,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        nav_bg: 'rgb(249, 247, 243)',
+                        btn_primary_bg: 'rgb(180, 244, 97)',
                     }
                 }
             }
@@ -33,8 +35,25 @@
 </head>
 
 <body class="font-lexend">
-    <header>
+    <div class="bg-nav_bg">
 
+   
+    <header class="container mx-auto ">
+        <div class="navbar ">
+            <div class="navbar-start">
+                <a class="btn bg-btn_primary_bg lg:font-semibold text-xl">Blog</a>
+            </div>
+            <div class="navbar-center gap-2">
+                <img src="./assets/logo.png" alt="">
+              <!-- <a class="hidden  btn btn-ghost text-xl ">Donate Bangladesh</a> -->
+              <p class="hidden lg:block lg:font-semibold text-xl">Donate Bangladesh</p>
+            </div>
+            <div class="navbar-end  gap-1 lg:gap-2">
+              <img src="./assets/coin.png" alt="">
+              <p class="lg:font-medium text-xl">5500 BDT</p>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
 
