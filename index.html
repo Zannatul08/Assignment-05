@@ -27,6 +27,8 @@
                         clifford: '#da373d',
                         nav_bg: 'rgb(249, 247, 243)',
                         btn_primary_bg: 'rgb(180, 244, 97)',
+                        card_section_border: 'rgba(17, 17, 17, 0.1)',
+                        card_button_bg: 'rgba(17, 17, 17, 0.05)',
                     }
                 }
             }
@@ -37,25 +39,62 @@
 <body class="font-lexend">
     <div class="bg-nav_bg">
 
-   
-    <header class="container mx-auto ">
-        <div class="navbar ">
-            <div class="navbar-start">
-                <a class="btn bg-btn_primary_bg lg:font-semibold text-xl">Blog</a>
+        <header class="container mx-auto ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <a class="btn bg-btn_primary_bg lg:font-semibold text-xl">Blog</a>
+                </div>
+                <div class="navbar-center gap-2">
+                    <img src="./assets/logo.png" alt="">
+                  <!-- <a class="hidden  btn btn-ghost text-xl ">Donate Bangladesh</a> -->
+                  <p class="hidden lg:block lg:font-semibold text-xl">Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end  gap-1 lg:gap-2">
+                  <img src="./assets/coin.png" alt="">
+                  <p class="lg:font-medium text-xl">5500 BDT</p>
+                </div>
+              </div>
             </div>
-            <div class="navbar-center gap-2">
-                <img src="./assets/logo.png" alt="">
-              <!-- <a class="hidden  btn btn-ghost text-xl ">Donate Bangladesh</a> -->
-              <p class="hidden lg:block lg:font-semibold text-xl">Donate Bangladesh</p>
+            <div class=" container mx-auto flex justify-center items-center gap-2 p-5 border  border-red-500">
+            
+                <a class="btn bg-btn_primary_bg lg:font-semibold text-xl">Donation</a>
+                <a class="btn bg-white lg:font-semibold text-xl">History</a>
             </div>
-            <div class="navbar-end  gap-1 lg:gap-2">
-              <img src="./assets/coin.png" alt="">
-              <p class="lg:font-medium text-xl">5500 BDT</p>
+
+            <div class="container mx-auto p-5 ">
+                <div class="card lg:card-side bg-base-100 border border-card_section_border rounded-2xl p-4">
+                    <figure class="lg:w-6/12">
+                      <img
+                        src="./assets/noakhali.png"
+                        alt="Album" />
+                    </figure>
+                    <div class="card-body lg:w-6/12">
+                        <!-- <div class="bg-card_button_bg gap-1 lg:gap-2 ">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="lg:font-medium text-xl">0 BDT</p>
+                          </div> -->
+                          <!-- <button class="btn flex justify-start">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="lg:font-medium text-xl">5500 BDT</p>
+                          </button> -->
+
+                          <div class="flex gap-1 lg:gap-2 rounded-lg  bg-card_button_bg w-1/4 px-4 py-2.5 ">
+                            <img src="./assets/coin.png" alt="">
+                            <p class="lg:font-medium text-xl">0 BDT</p>
+                          </div>
+                      <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                      <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                      <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                      <div class="card-actions ">
+                        <button class="btn btn-primary">Listen</button>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </div>
-    </header>
-    <main>
+            
+        </header>
+      
+    <main class="container mx-auto ">
 
     </main>
     <footer>
