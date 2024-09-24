@@ -13,23 +13,23 @@ function getTextFieldValueByID(id){
 
 
 
-function getDonationPurpose(cardId) {
-    const h2Element = document.querySelector(`#${cardId} .card-title`);
-    if (h2Element) {
-        let fullText = h2Element.innerText.trim(); 
+// function getDonationPurpose(cardId) {
+//     const h2Element = document.querySelector(`#${cardId} .card-title`);
+//     if (h2Element) {
+//         let fullText = h2Element.innerText.trim(); 
 
         
-        if (fullText.startsWith("Donate ")) {
-            return fullText.substring(7); 
-        } else if (fullText.startsWith("Aid ")) {
-            return fullText.substring(4); 
-        }
+//         if (fullText.startsWith("Donate ")) {
+//             return fullText.substring(7); 
+//         } else if (fullText.startsWith("Aid ")) {
+//             return fullText.substring(4); 
+//         }
         
        
-        return fullText;
-    }
-    return null;
-}
+//         return fullText;
+//     }
+//     return null;
+// }
 
 function showSectionById(id){
     document.getElementById('donation-section').classList.add('hidden');

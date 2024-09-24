@@ -149,7 +149,8 @@ document.getElementById('donate-btn3')
         document.getElementById('c3_balance').innerText = card_balance3 + " BDT";
 
 
-        const donationPurpose3 = getDonationPurpose('card-3');
+        // const donationPurpose3 = getDonationPurpose('card-3');
+        const donationPurpose3 = document.getElementById('heading3').innerText;
         const donationCard = document.createElement('div');
         // donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
         donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border'); 
@@ -157,7 +158,7 @@ document.getElementById('donate-btn3')
        
         p.style.fontWeight = 'bold';
         
-        p.innerText = `${amount} Taka is Donated ${donationPurpose3}`;
+        p.innerText = `${amount} Taka is Donated for ${donationPurpose3}`;
          
         const date = document.createElement('p');
    
