@@ -27,37 +27,37 @@ document.getElementById('donate-btn')
         const card_balance = amount + card1_amount;
         document.getElementById('c1_balance').innerText = card_balance + " BDT";
 
-        const donationPurpose1 = getDonationPurpose('card-1');
-
+        // const donationPurpose1 = getDonationPurpose('card-1');
+        const donationPurpose1 = document.getElementById('heading1').innerText;
         const donationCard = document.createElement('div');
         // border border-card_section_border rounded-2xl p-4 gap-8 mt-8
-        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border'); 
+        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border');
 
-        const p = document.createElement('p');  
+        const p = document.createElement('p');
         p.style.fontWeight = 'bold';
         // p.classList.add('bold');
-        // console.log('Donation Purpose:', donationPurpose1);
-        p.innerText = `${amount} Taka is Donated ${donationPurpose1}`;
-       
+
+        p.innerText = `${amount} Taka is Donated for ${donationPurpose1}`;
+
         const date = document.createElement('p');
         // const d = new Date();
         // document.getElementById("demo").innerHTML = d;
-         date.classList.add('text-base', 'text-gray-500','font-light');
-          date.innerText = `Date: ${new Date()}`;
+        date.classList.add('text-base', 'text-gray-500', 'font-light');
+        date.innerText = `Date: ${new Date()}`;
 
         donationCard.appendChild(p);
         donationCard.appendChild(date);
-        // Append the donationCard to the payment-container
+
         document.getElementById('payment-container').appendChild(donationCard);
 
 
         // const card2_amount = getTextFieldValueByID('c2_balance');
         // const card_balance2 = amount + card2_amount;
         // document.getElementById('c2_balance').innerText = card_balance2 + " BDT";
- 
+
         const modal = document.getElementById('my_modal_1');
-        if(modal){
-         modal.showModal();
+        if (modal) {
+            modal.showModal();
         }
 
 
@@ -71,7 +71,7 @@ document.getElementById('donate-btn')
 document.getElementById('donate-btn2')
     .addEventListener('click', function (event) {
         event.preventDefault();
-        
+
         const amount = parseFloat(getInputFieldValueById('donation-amount2'));
 
         if (isNaN(amount) || amount < 0) {
@@ -93,30 +93,31 @@ document.getElementById('donate-btn2')
         const card_balance2 = amount + card2_amount;
         document.getElementById('c2_balance').innerText = card_balance2 + " BDT";
 
-        const donationPurpose2 = getDonationPurpose('card-2');
+
+        const donationPurpose2 = document.getElementById('heading2').innerText;
         const donationCard = document.createElement('div');
         // donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
-        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border'); 
+        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border');
         const p = document.createElement('p');
-       
+
         p.style.fontWeight = 'bold';
-       
-        p.innerText = `${amount} Taka is Donated ${donationPurpose2}`;
-         
+
+        p.innerText = `${amount} Taka is Donated for ${donationPurpose2}`;
+
 
         const date = document.createElement('p');
-       
-         date.classList.add('text-base', 'text-gray-500','font-light');
-          date.innerText = `Date: ${new Date()}`;
+
+        date.classList.add('text-base', 'text-gray-500', 'font-light');
+        date.innerText = `Date: ${new Date()}`;
 
         donationCard.appendChild(p);
         donationCard.appendChild(date);
-      
+
         document.getElementById('payment-container').appendChild(donationCard);
-        
+
         const modal = document.getElementById('my_modal_1');
-        if(modal){
-         modal.showModal();
+        if (modal) {
+            modal.showModal();
         }
     }
 
@@ -126,7 +127,7 @@ document.getElementById('donate-btn2')
 document.getElementById('donate-btn3')
     .addEventListener('click', function (event) {
         event.preventDefault();
-       
+
         const amount = parseFloat(getInputFieldValueById('donation-amount3'));
 
         if (isNaN(amount) || amount < 0) {
@@ -149,32 +150,31 @@ document.getElementById('donate-btn3')
         document.getElementById('c3_balance').innerText = card_balance3 + " BDT";
 
 
-        // const donationPurpose3 = getDonationPurpose('card-3');
         const donationPurpose3 = document.getElementById('heading3').innerText;
         const donationCard = document.createElement('div');
-        // donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
-        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border'); 
+
+        donationCard.classList.add('card', 'bg-base-100', 'p-4', 'mt-4', 'border', 'border-card_section_border');
         const p = document.createElement('p');
-       
+
         p.style.fontWeight = 'bold';
-        
+
         p.innerText = `${amount} Taka is Donated for ${donationPurpose3}`;
-         
+
         const date = document.createElement('p');
-   
-         date.classList.add('text-base', 'text-gray-500','font-light');
-          date.innerText = `Date: ${new Date()}`;
+
+        date.classList.add('text-base', 'text-gray-500', 'font-light');
+        date.innerText = `Date: ${new Date()}`;
 
         donationCard.appendChild(p);
         donationCard.appendChild(date);
-    
+
         document.getElementById('payment-container').appendChild(donationCard);
 
 
-       const modal = document.getElementById('my_modal_1');
-       if(modal){
-        modal.showModal();
-       }
+        const modal = document.getElementById('my_modal_1');
+        if (modal) {
+            modal.showModal();
+        }
     }
 
     )
