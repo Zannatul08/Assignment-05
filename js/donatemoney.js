@@ -96,8 +96,15 @@ document.getElementById('donate-btn2')
         // console.log('Donation Purpose:', donationPurpose1);
         p.innerText = `${amount} Taka is Donated ${donationPurpose2}`;
          
-        donationCard.appendChild(p);
 
+        const date = document.createElement('p');
+        // const d = new Date();
+        // document.getElementById("demo").innerHTML = d;
+         date.classList.add('text-base', 'text-gray-500','font-light');
+          date.innerText = `Date: ${new Date()}`;
+
+        donationCard.appendChild(p);
+        donationCard.appendChild(date);
         // Append the donationCard to the payment-container
         document.getElementById('payment-container').appendChild(donationCard);
 
@@ -143,8 +150,14 @@ document.getElementById('donate-btn3')
         // console.log('Donation Purpose:', donationPurpose1);
         p.innerText = `${amount} Taka is Donated ${donationPurpose3}`;
          
-        donationCard.appendChild(p);
+        const date = document.createElement('p');
+        // const d = new Date();
+        // document.getElementById("demo").innerHTML = d;
+         date.classList.add('text-base', 'text-gray-500','font-light');
+          date.innerText = `Date: ${new Date()}`;
 
+        donationCard.appendChild(p);
+donationCard.appendChild(date);
         // Append the donationCard to the payment-container
         document.getElementById('payment-container').appendChild(donationCard);
 
