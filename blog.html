@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google Font CDN  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/761920a510.js" crossorigin="anonymous"></script>
+  <!-- DaiyUi and Tailwind CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-lexend {
+      font-family: "Lexend", sans-serif;
+    }
+
+    /* .blur-backdrop-filter{
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: 10;
+        } */
+
+    /* .custom-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2); */
+    /* .navbar-custom {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+} */
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            nav_bg: 'rgb(249, 247, 243)',
+            btn_primary_bg: 'rgb(180, 244, 97)',
+            card_section_border: 'rgba(17, 17, 17, 0.1)',
+            card_button_bg: 'rgba(17, 17, 17, 0.05)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-lexend">
+  <div class="bg-nav_bg sticky top-0 z-10 ">
+
+    <header class="container mx-auto ">
+      <div class="navbar ">
+
+        <!-- <div class="navbar bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] border border-white/20 rounded-lg shadow-lg"> -->
+        <!-- <div class="navbar navbar-custom"> -->
+
+        <div class="navbar-start">
+          <a href="index.html" class="btn bg-btn_primary_bg lg:font-semibold text-xl">Home</a>
+        </div>
+        <div class="navbar-center gap-2">
+          <img src="./assets/logo.png" alt="">
+          <!-- <a class="hidden  btn btn-ghost text-xl ">Donate Bangladesh</a> -->
+          <p class="hidden lg:block lg:font-semibold text-xl">Donate Bangladesh</p>
+        </div>
+        <div class="navbar-end gap-1 lg:gap-2">
+          <img src="./assets/coin.png" alt="">
+          <p id="account-balance" class="lg:font-medium text-xl">5500 BDT</p>
+        </div>
+      </div>
+  </div>
+  <!-- <div class=" container mx-auto flex justify-center items-center gap-2 p-5  sticky top-20 z-10 glass"> -->
+ 
+  </header>
+
+
+  <main class="container mx-auto ">
+    <div id="FAQ-section" class="container mx-auto p-5 ">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+     
+    </div>
+  </main>
+  <script src="js/utilities.js"></script>
+  <script src="js/donatemoney.js"></script>
+  <script src="js/visibilty.js"></script>
+  <footer class="bg-nav_bg pt-20 lg:pt-28 ">
+
+
+
+  </footer>
+</body>
+
+</html>
