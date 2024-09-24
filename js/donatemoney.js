@@ -54,6 +54,10 @@ document.getElementById('donate-btn')
         // const card2_amount = getTextFieldValueByID('c2_balance');
         // const card_balance2 = amount + card2_amount;
         // document.getElementById('c2_balance').innerText = card_balance2 + " BDT";
+ 
+        
+
+
 
     }
 
