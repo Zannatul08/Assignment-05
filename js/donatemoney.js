@@ -27,14 +27,21 @@ document.getElementById('donate-btn')
         const card_balance = amount + card1_amount;
         document.getElementById('c1_balance').innerText = card_balance + " BDT";
 
-        const p = document.createElement('p');
-        //  p.classList.add('bold');
         const donationPurpose1 = getDonationPurpose('card-1');
+
+        const donationCard = document.createElement('div');
+        donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
+
+        const p = document.createElement('p');  
         p.style.fontWeight = 'bold';
         // p.classList.add('bold');
         // console.log('Donation Purpose:', donationPurpose1);
         p.innerText = `${amount} Taka is Donated ${donationPurpose1}`;
-        document.getElementById('payment-container').appendChild(p);
+       
+        donationCard.appendChild(p);
+
+        // Append the donationCard to the payment-container
+        document.getElementById('payment-container').appendChild(donationCard);
 
 
         // const card2_amount = getTextFieldValueByID('c2_balance');
@@ -71,6 +78,22 @@ document.getElementById('donate-btn2')
         const card2_amount = getTextFieldValueByID('c2_balance');
         const card_balance2 = amount + card2_amount;
         document.getElementById('c2_balance').innerText = card_balance2 + " BDT";
+
+        const donationPurpose2 = getDonationPurpose('card-2');
+        const donationCard = document.createElement('div');
+        donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
+
+        const p = document.createElement('p');
+       
+        p.style.fontWeight = 'bold';
+        // p.classList.add('bold');
+        // console.log('Donation Purpose:', donationPurpose1);
+        p.innerText = `${amount} Taka is Donated ${donationPurpose2}`;
+         
+        donationCard.appendChild(p);
+
+        // Append the donationCard to the payment-container
+        document.getElementById('payment-container').appendChild(donationCard);
 
     }
 
