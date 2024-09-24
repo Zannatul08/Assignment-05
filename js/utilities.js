@@ -36,3 +36,9 @@ function showSectionById(id){
     document.getElementById('payment-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+
+//  function removeHighlightFromButtons() {
+//     document.getElementById('show-donation-section').classList.remove('btn_primary_bg');
+//      document.getElementById('show-payment-section').classList.remove('btn_primary_bg');
+//  }
