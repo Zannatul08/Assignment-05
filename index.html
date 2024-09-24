@@ -4,41 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Assignment - 03</title>
   <!-- Google Font CDN  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <!-- Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/761920a510.js" crossorigin="anonymous"></script>
-  <!-- DaiyUi and Tailwind CDN  -->
+  <!-- DaisyUi and Tailwind CDN  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .font-lexend {
       font-family: "Lexend", sans-serif;
     }
-
-    /* .blur-backdrop-filter{
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            background-color: rgba(255, 255, 255, 0.2);
-            z-index: 10;
-        } */
-
-    /* .custom-glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2); */
-    /* .navbar-custom {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-} */
   </style>
   <script>
     tailwind.config = {
@@ -82,8 +61,10 @@
   </div>
   <!-- <div class=" container mx-auto flex justify-center items-center gap-2 p-5  sticky top-20 z-10 glass"> -->
   <div class=" container mx-auto flex justify-center items-center gap-2 p-5  sticky top-20 z-10 ">
-    <a onclick="handleSelectBtn(this)" id="show-donation-section" class="btn bg-btn_primary_bg lg:font-semibold text-xl">Donation</a>
-    <a onclick="handleSelectBtn(this)" id="show-payment-section" class="btn bg-white lg:font-semibold text-xl">History</a>
+    <a onclick="handleSelectBtn(this)" id="show-donation-section"
+      class="btn bg-btn_primary_bg lg:font-semibold text-xl">Donation</a>
+    <a onclick="handleSelectBtn(this)" id="show-payment-section"
+      class="btn bg-white lg:font-semibold text-xl">History</a>
   </div>
 
   </header>
@@ -98,7 +79,7 @@
           <img src="./assets/noakhali.png" alt="Album" />
         </figure>
         <div class="card-body lg:w-6/12 lg:gap-9">
-          
+
 
           <div class="flex gap-1 lg:gap-2 rounded-lg  bg-card_button_bg w-1/2 lg:w-1/4 px-4 py-2 lg:px-4 lg:py-2.5 ">
             <img src="./assets/coin.png" alt="">
@@ -121,7 +102,8 @@
 
 
       <!-- 2nd card -->
-      <div id="card-2" class="card lg:card-side bg-base-100 border border-card_section_border rounded-2xl p-4 gap-8 mt-8 ">
+      <div id="card-2"
+        class="card lg:card-side bg-base-100 border border-card_section_border rounded-2xl p-4 gap-8 mt-8 ">
         <figure class="lg:w-6/12 lg:p-8">
           <img src="./assets/feni.png" alt="Album" />
         </figure>
@@ -149,7 +131,8 @@
       </div>
 
       <!-- 3rd card -->
-      <div id="card-3" class="card lg:card-side bg-base-100 border border-card_section_border rounded-2xl p-4 gap-8 mt-8 ">
+      <div id="card-3"
+        class="card lg:card-side bg-base-100 border border-card_section_border rounded-2xl p-4 gap-8 mt-8 ">
         <figure class="lg:w-6/12 lg:p-8">
           <img src="./assets/quota-protest.png" alt="Album" />
         </figure>
@@ -175,35 +158,34 @@
           <button id="donate-btn3" class="btn btn-block bg-btn_primary_bg lg:font-semibold text-xl">Donate Now</button>
           <!-- <button id="donate-btn3" class="btn btn-block bg-btn_primary_bg lg:font-semibold text-xl">Donate Now</button> -->
           <!-- </div> -->
-        
+
         </div>
       </div>
 
-  
-<!-- Modal code -->
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box flex flex-col justify-center items-center gap-2 lg:gap-2  ">
-    <h3 class="text-3xl font-bold">Congrats!</h3>
-    <img src="./assets/coin.png" alt="">
-    <p class="py-4">You have donated for Humankind</p>
-    <h4 class="text-lg font-bold">Successfully</h4>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close Confirmation</button>
-      </form>
-    </div>
-  </div>
-  </dialog>
+
+      <!-- Modal code -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box flex flex-col justify-center items-center gap-2 lg:gap-2  ">
+          <h3 class="text-3xl font-bold">Congrats!</h3>
+          <img src="./assets/coin.png" alt="">
+          <p class="py-4">You have donated for Humankind</p>
+          <h4 class="text-lg font-bold">Successfully</h4>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </div>
 
     <div id="payment-section" class="container mx-auto hidden">
       <!-- <div class="card lg:card-side bg-base-100 shadow-xl"> -->
-        <div class="card lg:card-side bg-base-100  ">
-        <div id="payment-container"  class="card-body ">
+      <div class="card lg:card-side bg-base-100  ">
+        <div id="payment-container" class="card-body ">
           <!-- <h2 class="card-title"></h2>
           <p></p> -->
-         
+
         </div>
       </div>
 
