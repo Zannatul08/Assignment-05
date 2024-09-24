@@ -27,6 +27,7 @@ document.getElementById('show-payment-section').addEventListener('click', functi
 });
 
 
+
 // document.getElementById('show-donation-section')
 // .addEventListener('click',function(event){
 //      removeHighlightFromButtons();

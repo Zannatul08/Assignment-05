@@ -98,19 +98,7 @@
           <img src="./assets/noakhali.png" alt="Album" />
         </figure>
         <div class="card-body lg:w-6/12 lg:gap-9">
-          <!-- <div class="bg-card_button_bg gap-1 lg:gap-2 ">
-                        <img src="./assets/coin.png" alt="">
-                        <p class="lg:font-medium text-xl">0 BDT</p>
-                      </div> -->
-          <!-- <button class="btn flex justify-start">
-                        <img src="./assets/coin.png" alt="">
-                        <p class="lg:font-medium text-xl">5500 BDT</p>
-                      </button> -->
-
-          <!-- <div class="flex lg:flex  gap-1 lg:gap-2 rounded-lg  bg-card_button_bg w-1/4 px-4 py-2.5 ">
-                        <img src="./assets/coin.png" alt="">
-                        <p class="lg:font-medium text-xl">0 BDT</p>
-                      </div> -->
+          
 
           <div class="flex gap-1 lg:gap-2 rounded-lg  bg-card_button_bg w-1/2 lg:w-1/4 px-4 py-2 lg:px-4 lg:py-2.5 ">
             <img src="./assets/coin.png" alt="">
@@ -184,16 +172,15 @@
           <input id="donation-amount3" type="text" placeholder="Write Donation Amount"
             class="input input-bordered w-full text-base font-light" />
           <!-- <div class="card-actions "> -->
-          <button onclick="my_modal_1.showModal()" id="donate-btn3" class="btn btn-block bg-btn_primary_bg lg:font-semibold text-xl">Donate Now</button>
+          <button id="donate-btn3" class="btn btn-block bg-btn_primary_bg lg:font-semibold text-xl">Donate Now</button>
+          <!-- <button id="donate-btn3" class="btn btn-block bg-btn_primary_bg lg:font-semibold text-xl">Donate Now</button> -->
           <!-- </div> -->
         
         </div>
       </div>
 
-      <!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-<!-- Open the modal using ID.showModal() method -->
-
+  
+<!-- Modal code -->
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box flex flex-col justify-center items-center gap-2 lg:gap-2  ">
     <h3 class="text-3xl font-bold">Congrats!</h3>
@@ -207,7 +194,7 @@
       </form>
     </div>
   </div>
-</dialog>
+  </dialog>
     </div>
 
     <div id="payment-section" class="container mx-auto hidden">

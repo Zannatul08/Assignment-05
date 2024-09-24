@@ -55,7 +55,10 @@ document.getElementById('donate-btn')
         // const card_balance2 = amount + card2_amount;
         // document.getElementById('c2_balance').innerText = card_balance2 + " BDT";
  
-        
+        const modal = document.getElementById('my_modal_1');
+        if(modal){
+         modal.showModal();
+        }
 
 
 
@@ -110,7 +113,11 @@ document.getElementById('donate-btn2')
         donationCard.appendChild(date);
       
         document.getElementById('payment-container').appendChild(donationCard);
-
+        
+        const modal = document.getElementById('my_modal_1');
+        if(modal){
+         modal.showModal();
+        }
     }
 
     )
@@ -158,10 +165,15 @@ document.getElementById('donate-btn3')
           date.innerText = `Date: ${new Date()}`;
 
         donationCard.appendChild(p);
-donationCard.appendChild(date);
+        donationCard.appendChild(date);
     
         document.getElementById('payment-container').appendChild(donationCard);
 
+
+       const modal = document.getElementById('my_modal_1');
+       if(modal){
+        modal.showModal();
+       }
     }
 
     )
