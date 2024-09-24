@@ -31,11 +31,8 @@ function getDonationPurpose(cardId) {
     return null;
 }
 
-// Example usage:
-// const donationPurpose1 = getDonationPurpose('card-1'); // For card 1
-// console.log(donationPurpose1); // Output depends on the card content
-
-// const donationPurpose2 = getDonationPurpose('card-2'); // For card 2
-// console.log(donationPurpose2); // Output depends on the card content
-
-// const donationPurpose3 = getDonationPurpose('card-3');
+function showSectionById(id){
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('payment-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
