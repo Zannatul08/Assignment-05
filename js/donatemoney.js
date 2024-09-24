@@ -125,6 +125,23 @@ document.getElementById('donate-btn3')
         const card_balance3 = amount + card3_amount;
         document.getElementById('c3_balance').innerText = card_balance3 + " BDT";
 
+
+        const donationPurpose3 = getDonationPurpose('card-3');
+        const donationCard = document.createElement('div');
+        donationCard.classList.add('card', 'bg-base-100', 'shadow-xl', 'p-4', 'mt-4'); 
+
+        const p = document.createElement('p');
+       
+        p.style.fontWeight = 'bold';
+        // p.classList.add('bold');
+        // console.log('Donation Purpose:', donationPurpose1);
+        p.innerText = `${amount} Taka is Donated ${donationPurpose3}`;
+         
+        donationCard.appendChild(p);
+
+        // Append the donationCard to the payment-container
+        document.getElementById('payment-container').appendChild(donationCard);
+
     }
 
     )
